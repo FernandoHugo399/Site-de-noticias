@@ -1,0 +1,65 @@
+/* GLOBAIS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/***********/
+
+
+
+/* HEADER */
+header{
+    background-color: #DDDDDD;
+    padding: 0 2%;
+}
+
+.flex-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+}
+
+.flex-header .logo{
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.flex-header .menu-desktop ul li{
+    display: inline-block;
+    font-size: 22px;
+    margin-right: 30px;
+}
+
+.flex-header .menu-desktop ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.flex-header .menu-desktop ul li input{
+    font-size: 22px;
+    padding-left: 8px;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+}
+
+.flex-header .menu-desktop ul img{
+    width: 28px;
+    height: 28px;
+    position: relative;
+    top: 5px;
+    right: 40px;
+}
