@@ -1,5 +1,11 @@
 const icon = document.querySelectorAll(".menub")[0];
-const menu = document.querySelectorAll("menu-mobile")[0];
+const menu = document.querySelectorAll(".menu-mobile")[0];
+
+addEventListener('resize', ()=>{
+    if(document.body.clientWidth > 965){
+        menu.classList.remove('mobaw')
+    }
+})
 
 icon.addEventListener('click', ()=>{
     if(menu.classList.contains('mobaw')){
