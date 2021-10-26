@@ -150,6 +150,7 @@ footer{
 
     header{
         position: fixed;
+        top: 0px;
     }
 
     .container{
@@ -168,6 +169,10 @@ footer{
         display: block;
     }
     
+    main{
+        margin-top: 120px;
+    }
+
 }
 
 @media screen and (max-width:768px){
@@ -185,7 +190,9 @@ footer{
     }
 }
 
-@media screen and (max-width: 420px){
+
+
+@media screen and (max-width: 600px){
     header{
         background-color: #DDDDDD;
         height: 80px;
@@ -201,7 +208,20 @@ footer{
 
     .menu-mobile{
         height: calc(100vh - 80px);
+        width: 180px;
     }
+
+    .menu-mobile ul li{
+        font-size: 17px;
+        padding-top: 20px;
+        list-style-type: none;
+        
+    }
+
+    main{
+        margin-top: 80px;
+    }
+
 
 footer{
     font-size: 16px;
