@@ -13,6 +13,7 @@ html,body{
 .container{
     max-width: 1400px;
     margin: 0 auto;
+    padding: 0 2%;
 }
 
 /***********/
@@ -22,7 +23,7 @@ html,body{
 /* HEADER */
 header{
     background-color: #DDDDDD;
-    padding: 0 2%;
+    height: 120px;
 }
 
 .flex-header{
@@ -30,6 +31,15 @@ header{
     align-items: center;
     justify-content: space-between;
     height: 120px;
+}
+
+.flex-header .menub{
+    width: 40px;
+    height: 40px;
+    background-image: url('/menub');
+    background-size: cover;
+    display: none;
+    cursor: pointer;
 }
 
 .flex-header .logo{
@@ -40,7 +50,7 @@ header{
 .flex-header .menu-desktop ul li{
     display: inline-block;
     font-size: 22px;
-    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .flex-header .menu-desktop ul li a {
@@ -63,3 +73,56 @@ header{
     top: 5px;
     right: 40px;
 }
+
+.flex-header .search{
+    width: 50px;
+    height: 50px;
+    background-image: url('/search');
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-mobile{
+    /* width: 250px; */
+    width: 0;
+    overflow: hidden;
+    background-color: #DDDDDD;
+    text-align: center;
+    height: calc(100vh - 120px);
+
+}
+
+.menu-mobile ul li{
+    font-size: 21px;
+    padding-top: 20px;
+    list-style-type: none;
+    
+}
+
+.menu-mobile ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/***********/
+
+/* MEDIA QUERIES */
+@media screen and (max-width:980px){
+    .menu-desktop{
+        display: none;
+    }
+
+    .flex-header .menub{
+        display: block;
+    }
+    
+    .flex-header .search{
+        display: block;
+    }
+    
+
+}
+/***********/

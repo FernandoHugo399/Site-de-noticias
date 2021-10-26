@@ -16,20 +16,30 @@
         <div class="container">
 
             <div class="flex-header">
-                <div class="logo">Logo</div>
+
+                <div class="menub"></div>  {{!-- botão do menu --}}
+
+                <div class="logo">Logo</div> {{!-- logo --}}
                 
                 <div class="menu-desktop">
                     <ul>
-                        <li><a href="#">CADASTRO NOTICIAS</a></li>
+                        <li><a href="">CADASTRO NOTICIAS</a></li>
                         <li><a href="#">EXIBIR NOTICIAS</a></li>
                         <li><input type="text" > <a href=""><img src="/search" alt="search"></a></li>
-                    
                     </ul> 
                 </div> {{!-- menu-desktop --}}
-            </div> {{!-- flex-header --}}
 
+                <div class="search"></div> {{!-- pesquisar --}}
+                
+            </div> {{!-- flex-header --}}
         </div> {{!--container --}}
 
+        <div class="menu-mobile">
+                    <ul>
+                        <li><a href="">CADASTRO NOTICIAS</a></li>
+                        <li><a href="">EXIBIR NOTICIAS</a></li>
+                    </ul> 
+                </div> {{!-- menu-mobile --}}
     </header>
     {{{body}}}
 </body>
