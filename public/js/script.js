@@ -3,7 +3,7 @@ const menu = document.querySelectorAll(".menu-mobile")[0];
 const header = document.querySelector("header")
 
 addEventListener('resize', ()=>{
-    if(document.body.clientWidth > 965){
+    if(document.body.clientWidth > 1035){
         menu.classList.remove('mobaw')
     }
 })

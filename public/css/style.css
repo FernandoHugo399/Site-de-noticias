@@ -125,10 +125,53 @@ header{
 /* MAIN */
 
 main{
-    height: 600px;
+    padding: 40px 2%;
     background-color: #EEEEF0;
 }
 
+.noticias{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.noticia{
+    width: 450px;
+    min-height: 550px;
+    padding: 30px 0;
+    background-color: white;
+    margin: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.noticia h2{
+    font-weight: bold;
+    font-size: 24px;
+    padding: 15px 0;
+}
+
+.noticia p{
+    font-size: 22px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.noticia button{
+    background-color: #DFDEE0;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 40px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.noticia button:hover{
+    background-color: #d1d0d3;
+}
 /***********/
 
 
@@ -146,7 +189,14 @@ footer{
 
 
 /* MEDIA QUERIES */
-@media screen and (max-width:980px){
+@media screen and (max-width: 1160px){
+    .noticia{
+        min-height: 500px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:1060px){
 
     header{
         position: fixed;
@@ -175,7 +225,14 @@ footer{
 
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width: 880px){
+    .noticia{
+        width: 300px;
+        min-height: 400px;
+    }
+}
+
+@media screen and (max-width:778px){
     
     .flex-header .search{
         width: 40px;
@@ -187,6 +244,11 @@ footer{
         width: 35px;
         height: 35px;
         display: block;
+    }
+
+    .noticia{
+        width: 400px;
+        min-height: 500px;
     }
 }
 
