@@ -36,10 +36,12 @@ header{
 .flex-header .menub{
     width: 40px;
     height: 40px;
-    background-image: url('/menub');
-    background-size: cover;
     display: none;
     cursor: pointer;
+
+}
+.flex-header .menub img{
+    width: 100%;
 }
 
 .flex-header .logo{
@@ -77,11 +79,12 @@ header{
 .flex-header .search{
     width: 50px;
     height: 50px;
-    background-image: url('/search');
-    background-position: center;
-    background-size: cover;
     cursor: pointer;
     display: none;
+}
+
+.flex-header .search img{
+    width: 100%;
 }
 
 .menu-mobile{
@@ -91,6 +94,7 @@ header{
     background-color: #DDDDDD;
     text-align: center;
     height: calc(100vh - 120px);
+    transition: 0.3s;
 
 }
 
@@ -106,11 +110,19 @@ header{
     text-decoration: none;
 }
 
+.mobaw{
+    width: 250px;
+}
 
 /***********/
 
 /* MEDIA QUERIES */
 @media screen and (max-width:980px){
+
+    .container{
+        padding: 0 5%;
+    }
+
     .menu-desktop{
         display: none;
     }
@@ -123,6 +135,19 @@ header{
         display: block;
     }
     
+}
 
+@media screen and (max-width:768px){
+    .flex-header .search{
+        width: 40px;
+        height: 40px;
+        display: block;
+    }
+
+    .flex-header .menub{
+        width: 35px;
+        height: 35px;
+        display: block;
+    }
 }
 /***********/

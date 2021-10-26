@@ -21,28 +21,17 @@
 
   
   //Rotas do express
-   
-    //Rotas de paginas
-      app.get('/', (req,res)=>{
-          res.render('home')
-      })
+
+    app.get('/', (req,res)=>{
+      res.render('home')
+    })
     
 
+  //Enviando arquivos 
+     app.use(express.static(__dirname + '/'));
 
 
-
-    /* Rotas com arquivos e imagens */
-      app.get('/estilo', (req,res)=>{
-          res.sendFile(__dirname + '/css/style.css')
-      })
-
-      app.get('/search', (req,res)=>{
-          res.sendFile(__dirname + '/imagens/search.png')
-      })
-
-      app.get('/menub', (req,res)=>{
-        res.sendFile(__dirname + '/imagens/icon_menu.png')
-      })
+      
 
 
 
