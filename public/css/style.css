@@ -24,6 +24,8 @@ html,body{
 header{
     background-color: #DDDDDD;
     height: 120px;
+    z-index: 999;
+    width: 100%;
 }
 
 .flex-header{
@@ -119,8 +121,36 @@ header{
 
 /***********/
 
+
+/* MAIN */
+
+main{
+    height: 600px;
+    background-color: #EEEEF0;
+}
+
+/***********/
+
+
+/* FOOTER */
+
+footer{
+    background-color: #DDDDDD;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    z-index: 1000;
+}
+
+
 /* MEDIA QUERIES */
 @media screen and (max-width:980px){
+
+    header{
+        position: fixed;
+    }
 
     .container{
         padding: 0 5%;
@@ -141,6 +171,7 @@ header{
 }
 
 @media screen and (max-width:768px){
+    
     .flex-header .search{
         width: 40px;
         height: 40px;
@@ -152,5 +183,28 @@ header{
         height: 35px;
         display: block;
     }
+}
+
+@media screen and (max-width: 420px){
+    header{
+        background-color: #DDDDDD;
+        height: 80px;
+    }
+
+    .flex-header{
+        height: 80px;
+    }
+    
+    .flex-header .logo{
+        font-size: 26px;
+    }
+
+    .menu-mobile{
+        height: calc(100vh - 80px);
+    }
+
+footer{
+    font-size: 16px;
+}
 }
 /***********/

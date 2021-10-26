@@ -1,5 +1,6 @@
 const icon = document.querySelectorAll(".menub")[0];
 const menu = document.querySelectorAll(".menu-mobile")[0];
+const header = document.querySelector("header")
 
 addEventListener('resize', ()=>{
     if(document.body.clientWidth > 965){
