@@ -25,6 +25,9 @@
       res.render('home')
     })
     
+    app.get('/cadastrar', (req,res)=>{
+      res.render('cadastrarNoticia')
+    })
 
 
   //Enviando arquivos 

@@ -16,6 +16,10 @@ html,body{
     padding: 0 2%;
 }
 
+.clear{
+    clear: both;
+}
+
 /***********/
 
 
@@ -180,6 +184,61 @@ main h2{
 
 .noticia button:hover{
     background-color: #d1d0d3;
+}
+
+.form-cadastrar{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    
+    padding:150px 5% 150px 5%;
+}
+
+.form-cadastrar h2{
+    text-align: left;
+    text-transform: none;
+    font-size: 30px;
+}
+
+.form-cadastrar input{
+    width: 100%;
+    font-size: 22px;
+    padding: 8px 10px;
+    outline: 0;
+    margin-top: 10px;
+    border: none;
+    box-shadow: 1px 1px 5px 0px #000000;
+}
+
+.form-cadastrar textarea{
+    width: 100%;
+    font-size: 22px;
+    padding: 8px 10px;
+    outline: 0;
+    margin-top: 10px;
+    border: none;
+    box-shadow: 1px 1px 5px 0px #000000;
+    resize: vertical;
+}
+
+.form-cadastrar button{
+    width: 150px;
+    float: right;
+    padding: 12px 0;
+    font-size: 20px;
+    background-color: #2E5AAB;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.form-cadastrar a button{
+    background-color: white;
+    color: #2E5AAB;
+    border: 1px solid #2E5AAB;
 }
 /***********/
 
