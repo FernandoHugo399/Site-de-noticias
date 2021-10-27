@@ -43,8 +43,20 @@
       deletarDados(id,res)
     })
 
+    app.get('/editar/:id', (req,res)=>{
+      res.render('editarNoticia')
+    })
+
+    app.post('/editar/:id', (req,res)=>{
+      let id = req.params.id
+      let title = req.body.titulo
+      let conteudo = req.body.conteudo
+      editarDados(id,title,conteudo,res)
+    })
+
   //Enviando arquivos 
      app.use(express.static('public'));
+     
 
 
       
@@ -91,3 +103,18 @@
         res.send('Ocorreu um erro: '+ erro)        
       })
     }
+
+  
+  //Editando dados da tabela
+  function editarDados(id, titulo, conteudo, res){
+    Postagem.update({titulo:titulo, conteudo:conteudo},{
+      where:{
+        id:id
+      }
+    }).then(()=>{
+      console.log("Operação concluída com sucesso!")
+      res.redirect('/')
+    }).catch((erro)=>{
+      res.send('Ocorreu um erro: '+ erro)        
+    })
+  }
