@@ -155,7 +155,7 @@ main h2{
     min-height: 550px;
     padding: 30px 0;
     background-color: white;
-    margin: 30px;
+    margin: 30px 30px;
     border: 1px solid #ccc;
     text-align: center;
 }
@@ -167,7 +167,7 @@ main h2{
 }
 
 .noticia p{
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     padding: 0 20px;
     margin-bottom: 30px;
@@ -196,7 +196,8 @@ main h2{
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
-    
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
     padding:150px 5% 150px 5%;
 }
 
@@ -272,7 +273,21 @@ footer{
 @media screen and (max-width: 1160px){
     .noticia{
         min-height: 500px;
-        width: 350px;
+        width: 370px;
+        margin: 30px 20px;
+    }
+
+    .noticia h2{
+        font-size: 20px;
+    }
+    
+    .noticia p{
+        font-size: 16px;
+    }
+    
+    .noticia button{
+        width: 130px;
+        font-size: 16px;
     }
 }
 
@@ -311,8 +326,21 @@ footer{
 
 @media screen and (max-width: 880px){
     .noticia{
-        width: 300px;
-        min-height: 400px;
+        width: 450px;
+        min-height: 550px;
+    }
+    
+    .noticia h2{
+        font-size: 24px;
+    }
+    
+    .noticia p{
+        font-size: 20px;
+    }
+    
+    .noticia button{
+        width: 130px;
+        font-size: 20px;
     }
 }
 
@@ -332,11 +360,6 @@ footer{
         width: 35px;
         height: 35px;
         display: block;
-    }
-
-    .noticia{
-        width: 400px;
-        min-height: 500px;
     }
 
     .form-cadastrar button{
@@ -373,7 +396,6 @@ footer{
         font-size: 17px;
         padding-top: 20px;
         list-style-type: none;
-        
     }
 
     main{
