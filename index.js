@@ -21,22 +21,25 @@
 
   
   //Rotas do express
-
     app.get('/', (req,res)=>{
       res.render('home')
     })
     
+
 
   //Enviando arquivos 
      app.use(express.static('public'));
 
 
       
-
-
-
-
   //Ligando Servidor
     app.listen(port,hostname,()=>{
         console.log('Servidor iniciado')
     })
+
+
+
+
+
+//Sequelize 
+  
