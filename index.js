@@ -22,7 +22,10 @@
   
   //Rotas do express
     app.get('/', (req,res)=>{
-      res.render('home')
+      Postagem.findAll({order:[['id', 'DESC']]})
+      .then((posts)=>{
+        res.render('home', {posts: posts})
+      })
     })
     
     app.get('/cadastrar', (req,res)=>{
