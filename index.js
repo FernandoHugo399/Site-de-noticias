@@ -38,6 +38,11 @@
       adicionarDados(title,conteudo,res)
     })
 
+    app.get('/excluir/:id', (req,res)=>{
+      let id = req.params.id
+      deletarDados(id,res)
+    })
+
   //Enviando arquivos 
      app.use(express.static('public'));
 
@@ -64,6 +69,21 @@
       Postagem.create({
         titulo: titulo,
         conteudo: conteudo
+      }).then(()=>{
+        console.log("Operação concluída com sucesso!")
+        res.redirect('/')
+      }).catch((erro)=>{
+        res.send('Ocorreu um erro: '+ erro)        
+      })
+    }
+
+  
+  //Excluindo dados da tabela
+    function deletarDados(id, res){
+      Postagem.destroy({
+        where:{
+          id:id
+        }
       }).then(()=>{
         console.log("Operação concluída com sucesso!")
         res.redirect('/')

@@ -4,7 +4,8 @@
     <div class="noticia notnull">
         <h2>{{dataValues.titulo}}</h2>
         <p>{{dataValues.conteudo}}</p>
-        <a href=""><button>Acessar</button></a>
+        <a href="/editar/{{dataValues.id}}"><button>Editar</button></a>
+        <a href="/excluir/{{dataValues.id}}"><button>Excluir</button></a>
     </div> {{!-- noticia --}}
     {{/each}}
 
