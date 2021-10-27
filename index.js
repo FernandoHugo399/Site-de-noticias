@@ -29,6 +29,11 @@
       res.render('cadastrarNoticia')
     })
 
+    app.post('/cadastrar', (req,res)=>{
+      let title = req.body.titulo
+      let conteudo = req.body.conteudo
+      adicionarDados(title,conteudo,res)
+    })
 
   //Enviando arquivos 
      app.use(express.static('public'));
@@ -48,3 +53,18 @@
   const database = require('./db')
   const Postagem = require('./models/postagem')
   database.sync()
+
+
+
+  //Enviando dados para a tabela
+    function adicionarDados(titulo, conteudo, res){
+      Postagem.create({
+        titulo: titulo,
+        conteudo: conteudo
+      }).then(()=>{
+        console.log("Operação concluída com sucesso!")
+        res.redirect('/')
+      }).catch((erro)=>{
+        res.send('Ocorreu um erro: '+ erro)        
+      })
+    }

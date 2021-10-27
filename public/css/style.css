@@ -243,8 +243,11 @@ main h2{
 /***********/
 
 
-/* FOOTER */
 
+
+
+
+/* FOOTER */
 footer{
     background-color: #DDDDDD;
     height: 110px;
@@ -254,6 +257,9 @@ footer{
     font-size: 20px;
     z-index: 1000;
 }
+/***********/
+
+
 
 
 /* MEDIA QUERIES */
@@ -293,12 +299,20 @@ footer{
 
 }
 
+
+
+
+
 @media screen and (max-width: 880px){
     .noticia{
         width: 300px;
         min-height: 400px;
     }
 }
+
+
+
+
 
 @media screen and (max-width:778px){
     
@@ -325,6 +339,8 @@ footer{
        
     
 }
+
+
 
 
 
@@ -358,9 +374,8 @@ footer{
         margin-top: 80px;
     }
 
-
-footer{
-    font-size: 16px;
-}
+    footer{
+        font-size: 16px;
+    }
 }
 /***********/
