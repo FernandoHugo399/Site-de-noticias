@@ -42,4 +42,6 @@
 
 
 //Sequelize 
-  
+  const database = require('./db')
+  const Postagem = require('./models/postagem')
+  database.sync()
