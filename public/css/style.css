@@ -131,7 +131,7 @@ header{
 main{
     padding: 40px 2%;
     background-color: #EEEEF0;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 main h2{
@@ -318,6 +318,12 @@ footer{
         width: 400px;
         min-height: 500px;
     }
+
+    .form-cadastrar button{
+        float: left
+    }
+       
+    
 }
 
 
