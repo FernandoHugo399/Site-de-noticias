@@ -47,7 +47,8 @@ header{
 
 }
 .flex-header .menub img{
-    width: 100%;
+    width: 40px;
+    height: 40px;
 }
 
 .flex-header .logo a{
@@ -69,36 +70,100 @@ header{
 }
 
 .flex-header .menu-desktop ul li input{
-    font-size: 22px;
+    font-size: 20px;
     padding-left: 8px;
     outline: 0;
     border: 0;
     border-radius: 10px;
 }
 
-.flex-header .menu-desktop ul img{
-    width: 28px;
-    height: 28px;
-    position: relative;
-    top: 5px;
-    right: 40px;
+.flex-header .menu-desktop ul li input:-webkit-autofill {
+    box-shadow:0 0 0 50px white inset; 
+    -webkit-text-fill-color: #333;
 }
+
+.flex-header .menu-desktop input:-webkit-autofill:focus {
+    box-shadow: 0 0 0 50px white inset;
+    -webkit-text-fill-color: #333;
+} 
+
+.flex-header .menu-desktop ul button {
+    display: inline-block;
+    height: 26px;
+    width: 26px;
+    background-image: url( '../imagens/search.png' );
+    background-size: 100%;
+    border: none;
+    background-color: white;
+    position: relative;
+    top: 6px;
+    right: 40px;
+    cursor: pointer;
+
+}
+.barrapesquisa{
+    display: none;
+    width: 80%;
+    margin-left: 5%;
+}
+
+.barrapesquisa input{
+    width: 100%;
+    font-size: 20px;
+    padding: 3px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #DDDDDD;
+    outline: 0;
+    text-align: center;
+
+}
+
+.barrapesquisa input:-webkit-autofill {
+    box-shadow:0 0 0 50px #DDDDDD inset; 
+    -webkit-text-fill-color: black;
+}
+
+.barrapesquisa input:-webkit-autofill:focus {
+    box-shadow: 0 0 0 50px #DDDDDD inset;
+    -webkit-text-fill-color: black;
+} 
+
 
 .flex-header .search{
     width: 50px;
     height: 50px;
-    cursor: pointer;
-    display: none;
+    
 }
 
 .flex-header .search img{
     width: 100%;
+    cursor: pointer;
+    display: none;
 }
+
+.flex-header .close{
+    position: relative;
+    top: 2px;
+    right: -5%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+.flex-header .close img{
+    width: 35px;
+    height: 35px;
+}
+
 
 .menu-mobile{
     /* width: 250px; */
-    left: -250px;
-    width: 250px;
+    left: -230px;
+    width: 230px;
     position: fixed;
     overflow: hidden;
     background-color: #DDDDDD;
@@ -125,6 +190,10 @@ header{
     left: 0;
 }
 
+.none{
+    display: none;
+}
+
 /***********/
 
 
@@ -140,7 +209,7 @@ main h2{
     padding-top: 30px;
     text-transform: uppercase;
     text-align: center;
-    font-size: 30px;
+    font-size: 26px;
 
 }
 
@@ -151,8 +220,8 @@ main h2{
 }
 
 .noticia{
-    width: 450px;
-    min-height: 550px;
+    width: 400px;
+    min-height: 500px;
     padding: 30px 0;
     background-color: white;
     margin: 30px 30px;
@@ -162,12 +231,12 @@ main h2{
 
 .noticia h2{
     font-weight: bold;
-    font-size: 24px;
+    font-size: 22px;
     padding: 15px 0;
 }
 
 .noticia p{
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     padding: 0 20px;
     margin-bottom: 30px;
@@ -176,7 +245,7 @@ main h2{
 .noticia button{
     background-color: #DFDEE0;
     padding: 10px;
-    width: 130px;
+    width: 120px;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
@@ -195,7 +264,7 @@ main h2{
 .form-cadastrar{
     margin: 0 auto;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     background-color: #f3f3f3;
     border: 1px solid #ccc;
     padding:150px 5% 150px 5%;
@@ -204,12 +273,12 @@ main h2{
 .form-cadastrar h2{
     text-align: left;
     text-transform: none;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .form-cadastrar input{
     width: 100%;
-    font-size: 22px;
+    font-size: 18px;
     padding: 8px 10px;
     outline: 0;
     margin-top: 10px;
@@ -219,7 +288,7 @@ main h2{
 
 .form-cadastrar textarea{
     width: 100%;
-    font-size: 22px;
+    font-size: 18px;
     padding: 8px 10px;
     outline: 0;
     margin-top: 10px;
@@ -229,17 +298,17 @@ main h2{
 }
 
 .form-cadastrar button{
-    width: 150px;
+    width: 130px;
     float: right;
-    padding: 12px 0;
-    font-size: 20px;
+    padding: 8px 0;
+    font-size: 18px;
     background-color: #2E5AAB;
     color: white;
     border: 1px solid white;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 5px;
     margin-top: 10px;
+    margin-left: 5px;
 }
 
 .form-cadastrar a button{
@@ -289,6 +358,7 @@ footer{
         width: 130px;
         font-size: 16px;
     }
+
 }
 
 @media screen and (max-width:1060px){
@@ -310,12 +380,13 @@ footer{
         display: block;
     }
     
-    .flex-header .search{
+    .flex-header .search img{
+        width: 100%;
         display: block;
     }
     
     main{
-        margin-top: 120px;
+        margin-top: 110px;
     }
 
 }
@@ -326,16 +397,16 @@ footer{
 
 @media screen and (max-width: 880px){
     .noticia{
-        width: 450px;
-        min-height: 550px;
+        width: 400px;
+        min-height: 500px;
     }
     
     .noticia h2{
-        font-size: 24px;
+        font-size: 22px;
     }
     
     .noticia p{
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .noticia button{
@@ -362,8 +433,26 @@ footer{
         display: block;
     }
 
+    .flex-header .menub img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .flex-header .close{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .flex-header .close img{
+        width: 30px;
+        height: 30px;
+    }
+
     .form-cadastrar button{
-        float: left
+        float: left;
+        margin-left: 0;
+        margin-right: 5px;
+        
     }
        
     

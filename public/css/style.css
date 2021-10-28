@@ -44,10 +44,11 @@ header{
     height: 40px;
     display: none;
     cursor: pointer;
-
+    margin-left: 2%;
 }
 .flex-header .menub img{
-    width: 100%;
+    width: 40px;
+    height: 40px;
 }
 
 .flex-header .logo a{
@@ -101,9 +102,11 @@ header{
 
 }
 .barrapesquisa{
+    position: relative;
+    top: 15px;
     display: none;
-    width: 80%;
-    margin: 0 5%;
+    width: 100%;
+    margin-left: 5%;
 }
 
 .barrapesquisa input{
@@ -143,15 +146,19 @@ header{
 }
 
 .flex-header .close{
-    width: 28px;
-    height: 28px;
+    position: relative;
+    top: 2px;
+    right: -5%;
+    width: 35px;
+    height: 35px;
     cursor: pointer;
     display: none;
     
 }
 
 .flex-header .close img{
-    width: 100%;
+    width: 35px;
+    height: 35px;
 }
 
 
@@ -427,6 +434,30 @@ footer{
         height: 35px;
         display: block;
     }
+
+    .flex-header .menub img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .flex-header .close{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .flex-header .close img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .barrapesquisa{
+        position: relative;
+        top: 10px;
+        display: none;
+        width: 100%;
+        margin-left: 5%;
+    }
+    
 
     .form-cadastrar button{
         float: left;

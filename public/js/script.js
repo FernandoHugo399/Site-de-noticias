@@ -66,5 +66,5 @@
           fechar.style.display = 'none';
           barra.style.display = 'none';
           logo.style.display = 'block';
-      } else{}
+      } 
   })
