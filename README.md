@@ -9,7 +9,19 @@ Site de notícias dinâmico, com o sistema feito em nodeJS
 <br>
 Foi baseado em uma prova que a empresa Devmedia fez para contratar novos funcionários
 
+
 ## 👷 Comor rodar:
+```bash
+# Clonar o repositório
+git clone https://github.com/FernandoHugo399/Site-de-noticias
+
+# Entrar numa IDE de sua preferência 
+
+# Executar com o node o arquivo index.js
+
+```
+
+
 
 ## :rocket: Tecnologias usadas:
 <p align="center">
