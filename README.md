@@ -34,7 +34,9 @@ No primeiro parametro, utilize o nome do banco de dados,
 no segundo o nome do host, e no terceiro a senha.
 
 
-# Executar usando node o arquivo index.js
+# Execute usando node o arquivo index.js
+
+# depois abra algum navegador na url http://localhost:8081/
 
 ```
 
