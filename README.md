@@ -36,7 +36,7 @@ no segundo o nome do host, e no terceiro a senha.
 
 # Execute usando node o arquivo index.js
 
-# depois abra algum navegador na url http://localhost:8081/
+# depois abra aum navegador no endereço http://localhost:8081/
 
 ```
 
