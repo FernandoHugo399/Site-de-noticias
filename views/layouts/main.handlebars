@@ -26,7 +26,10 @@
                     <ul>
                         <li><a href="/cadastrar">CADASTRO NOTICIAS</a></li>
                         <li><a href="/">EXIBIR NOTICIAS</a></li>
-                        <li><input type="text" > <a href=""><img src="imagens/search.png" alt="search"></a></li>
+                        <li><form action="/pesquisar" method="get">
+                            <input type="text" name="valorpesquisa"> <button type="submit">pesquisar</button>
+                            </form>
+                            </li>
                     </ul> 
                 </div> {{!-- menu-desktop --}}
 

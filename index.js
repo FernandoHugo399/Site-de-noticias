@@ -54,6 +54,12 @@
       editarDados(id,title,conteudo,res)
     })
 
+    app.get('/pesquisar', (req,res)=>{
+      let valor = req.query.valorpesquisa
+      console.log(valor)
+      PesquisarDados(valor,res)
+    })
+
   //Enviando arquivos 
      app.use(express.static('public'));
      
@@ -70,8 +76,10 @@
 
 
 //Sequelize 
+  const Sequelize = require('sequelize');
   const database = require('./db')
   const Postagem = require('./models/postagem')
+  const Op = Sequelize.Op
   database.sync()
 
 
@@ -106,15 +114,32 @@
 
   
   //Editando dados da tabela
-  function editarDados(id, titulo, conteudo, res){
-    Postagem.update({titulo:titulo, conteudo:conteudo},{
-      where:{
-        id:id
-      }
-    }).then(()=>{
-      console.log("Operação concluída com sucesso!")
-      res.redirect('/')
-    }).catch((erro)=>{
-      res.send('Ocorreu um erro: '+ erro)        
-    })
-  }
+    function editarDados(id, titulo, conteudo, res){
+      Postagem.update({titulo:titulo, conteudo:conteudo},{
+        where:{
+          id:id
+        }
+      }).then(()=>{
+        console.log("Operação concluída com sucesso!")
+        res.redirect('/')
+      }).catch((erro)=>{
+        res.send('Ocorreu um erro: '+ erro)        
+      })
+    }
+
+
+
+  //Pesquisar dados da tabela
+    function PesquisarDados(valor,res){
+      const query = `${valor}%`
+      Postagem.findAll({
+        where:{
+          titulo:{
+            [Op.like]: query
+          }
+        }
+      }).then((posts)=>{
+        res.render('home', {posts: posts})
+      })
+    }  
+
