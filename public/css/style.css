@@ -76,13 +76,21 @@ header{
     border-radius: 10px;
 }
 
-.flex-header .menu-desktop ul img{
-    width: 28px;
+.flex-header .menu-desktop ul button {
+    display: inline-block;
     height: 28px;
+    width: 28px;
+    background-image: url( '../imagens/search.png' );
+    background-size: 100%;
+    border: none;
+    background-color: white;
     position: relative;
     top: 5px;
-    right: 40px;
+    right: 50px;
+    cursor: pointer;
+
 }
+
 
 .flex-header .search{
     width: 50px;
