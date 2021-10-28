@@ -76,6 +76,16 @@ header{
     border-radius: 10px;
 }
 
+.flex-header .menu-desktop ul li input:-webkit-autofill {
+    box-shadow:0 0 0 50px white inset; 
+    -webkit-text-fill-color: #333;
+}
+
+.flex-header .menu-desktop input:-webkit-autofill:focus {
+    box-shadow: 0 0 0 50px white inset;
+    -webkit-text-fill-color: #333;
+} 
+
 .flex-header .menu-desktop ul button {
     display: inline-block;
     height: 26px;
@@ -90,18 +100,60 @@ header{
     cursor: pointer;
 
 }
+.barrapesquisa{
+    display: none;
+    width: 80%;
+    margin: 0 5%;
+}
+
+.barrapesquisa input{
+    width: 100%;
+    font-size: 20px;
+    padding: 3px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #DDDDDD;
+    outline: 0;
+    text-align: center;
+
+}
+
+.barrapesquisa input:-webkit-autofill {
+    box-shadow:0 0 0 50px #DDDDDD inset; 
+    -webkit-text-fill-color: black;
+}
+
+.barrapesquisa input:-webkit-autofill:focus {
+    box-shadow: 0 0 0 50px #DDDDDD inset;
+    -webkit-text-fill-color: black;
+} 
 
 
 .flex-header .search{
     width: 50px;
     height: 50px;
-    cursor: pointer;
-    display: none;
+    
 }
 
 .flex-header .search img{
     width: 100%;
+    cursor: pointer;
+    display: none;
 }
+
+.flex-header .close{
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+.flex-header .close img{
+    width: 100%;
+}
+
 
 .menu-mobile{
     /* width: 250px; */
@@ -133,6 +185,10 @@ header{
     left: 0;
 }
 
+.none{
+    display: none;
+}
+
 /***********/
 
 
@@ -148,7 +204,7 @@ main h2{
     padding-top: 30px;
     text-transform: uppercase;
     text-align: center;
-    font-size: 30px;
+    font-size: 26px;
 
 }
 
@@ -212,12 +268,12 @@ main h2{
 .form-cadastrar h2{
     text-align: left;
     text-transform: none;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .form-cadastrar input{
     width: 100%;
-    font-size: 20px;
+    font-size: 18px;
     padding: 8px 10px;
     outline: 0;
     margin-top: 10px;
@@ -227,7 +283,7 @@ main h2{
 
 .form-cadastrar textarea{
     width: 100%;
-    font-size: 20px;
+    font-size: 18px;
     padding: 8px 10px;
     outline: 0;
     margin-top: 10px;
@@ -237,17 +293,17 @@ main h2{
 }
 
 .form-cadastrar button{
-    width: 150px;
+    width: 130px;
     float: right;
-    padding: 12px 0;
+    padding: 8px 0;
     font-size: 18px;
     background-color: #2E5AAB;
     color: white;
     border: 1px solid white;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 5px;
     margin-top: 10px;
+    margin-left: 5px;
 }
 
 .form-cadastrar a button{
@@ -297,6 +353,7 @@ footer{
         width: 130px;
         font-size: 16px;
     }
+
 }
 
 @media screen and (max-width:1060px){
@@ -318,7 +375,8 @@ footer{
         display: block;
     }
     
-    .flex-header .search{
+    .flex-header .search img{
+        width: 100%;
         display: block;
     }
     
@@ -371,7 +429,10 @@ footer{
     }
 
     .form-cadastrar button{
-        float: left
+        float: left;
+        margin-left: 0;
+        margin-right: 5px;
+        
     }
        
     
