@@ -19,18 +19,19 @@ git clone https://github.com/FernandoHugo399/Site-de-noticias
 
 # Iniciar o servidor com mysql
 
-#rodar o código
+#rodar o código no mysql
 create database node25
 character set utf8mb4
 collate utf8mb4_unicode_ci; 
 
 
-#ir para o arquivo e alterar as seguintes configurações de acordo com seu servidor
+#ir para o arquivo db.js e alterar as seguintes configurações de acordo com seu servidor
 const sequelize = new Sequelize('node25', 'root', '',{
     dialect: 'mysql',
     host: 'localhost'
 })
-No primeiro parametro, utilize o nome do banco de dados, no segundo o nome do host, e no terceiro a senha.
+No primeiro parametro, utilize o nome do banco de dados,
+no segundo o nome do host, e no terceiro a senha.
 
 
 # Executar usando node o arquivo index.js
