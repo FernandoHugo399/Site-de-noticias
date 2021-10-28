@@ -7,7 +7,7 @@
 ## :mag: Sobre: 
 Site de notícias dinâmico, com o sistema feito em nodeJS
 <br>
-Foi baseado em uma prova que a empresa Devmedia fez para contratar novos funcionários
+Foi baseado em uma prova em que Devmedia fez para contratar novos funcionários
 
 
 ## 👷 Comor rodar:
