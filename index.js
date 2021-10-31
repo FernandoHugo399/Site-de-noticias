@@ -60,8 +60,9 @@
       PesquisarDados(valor,res)
     })
 
-  //Enviando arquivos 
-     app.use(express.static('public'));
+  //Enviando arquivos estáticos
+    const path = require('path')
+    app.use(express.static(path.join(__dirname, 'public')));
      
 
 
