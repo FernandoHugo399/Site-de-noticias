@@ -5,21 +5,21 @@
  ---
 
 ## :mag: Sobre: 
-Site de notícias dinâmico, com o sistema feito em nodeJS
+Dynamic news site, with the system built in nodeJS
 <br>
-Foi baseado em uma prova em que Devmedia fez para contratar novos funcionários
+It was based on a test that Devmedia did to hire new employees.
 
 
 ## 👷 Comor rodar:
 ```bash
-# Clonar o repositório
+# clone the repository
 git clone https://github.com/FernandoHugo399/Site-de-noticias
 
-# Entrar numa IDE de sua preferência 
+# open an IDE of your choice
 
-# Iniciar o servidor com mysql
+# Start the server with mysql
 
-#rodar o código no mysql
+#type the code below into mysql
 create database node25
 character set utf8mb4
 collate utf8mb4_unicode_ci; 
