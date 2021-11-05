@@ -25,7 +25,7 @@ character set utf8mb4
 collate utf8mb4_unicode_ci; 
 
 
-#ir para o arquivo db.js e alterar as seguintes configurações de acordo com seu servidor
+#Access the db.js file and change the following settings according to your server
 const sequelize = new Sequelize('node25', 'root', '',{
     dialect: 'mysql',
     host: 'localhost'
@@ -34,9 +34,9 @@ No primeiro parametro, utilize o nome do banco de dados,
 no segundo o nome do host, e no terceiro a senha.
 
 
-# Execute usando node o arquivo index.js
+# run the index.js file using node
 
-# depois abra algum navegador no endereço http://localhost:8081/
+# after that open your browser at http://localhost:8081/
 
 ```
 
