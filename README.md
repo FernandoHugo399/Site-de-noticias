@@ -30,8 +30,8 @@ const sequelize = new Sequelize('node25', 'root', '',{
     dialect: 'mysql',
     host: 'localhost'
 })
-No primeiro parametro, utilize o nome do banco de dados,
-no segundo o nome do host, e no terceiro a senha.
+in the first parameter, use the database name.
+in the second parameter the hostname, and on the third, the password
 
 
 # run the index.js file using node
