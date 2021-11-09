@@ -1,16 +1,16 @@
-# Site de noticias
+# news site
 ![part1](https://user-images.githubusercontent.com/87580316/139319097-5689657e-7f42-4a35-ba9f-29bb316807c6.jpg)
 ![part2](https://user-images.githubusercontent.com/87580316/139319547-dc223672-f38d-4743-a341-1eaf12048832.jpg)
 ![part3](https://user-images.githubusercontent.com/87580316/139319415-86030449-1df6-465f-9ca7-0a0b2444cef7.jpg)
  ---
 
-## :mag: Sobre: 
+## :mag: About: 
 Dynamic news site, with the system built in nodeJS
 <br>
 It was based on a test that Devmedia did to hire new employees.
 
 
-## 👷 Comor rodar:
+## 👷 how to run it:
 ```bash
 # clone the repository
 git clone https://github.com/FernandoHugo399/Site-de-noticias
@@ -42,7 +42,7 @@ in the second parameter the hostname, and on the third, the password
 
 
 
-## :rocket: Tecnologias usadas:
+## :rocket: technologies useds:
 <p align="center">
 <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-plain-wordmark.svg" alt="html5"  width="70" height="70"/>
 <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg" alt="css3" width="70" height="70"/>
